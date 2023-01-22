@@ -1,0 +1,387 @@
+html{
+  /* Para tener un movimiento lento */ 
+  scroll-behavior: smooth; 
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* De aquí para abajo son mis estilos */
+
+.contenedorCuentosNav{
+  padding-top: 2%;
+}
+
+.tituloprincipal{
+  text-align: center;
+}
+
+.contenedorBoton{
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.boton{
+  width: 300px;
+}
+
+.contenidoCuentos{
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  padding: 5px;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.imgsCardsContenedor{
+text-align: center;
+}
+
+.imgsCards{
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tituloCuentoCard{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descripciónCuento{
+  font-style: italic;
+}
+
+.tituloCuentos{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contenidoCuentos p{
+  font-size: 100%;
+  text-align: justify;
+}
+
+.audios{
+  text-align: center;
+}
+
+.contenedorImg{
+  text-align: center;
+}
+
+.fotoWeya{
+ border-radius: 20px;
+}
+
+.fotoWeyatres{
+  width: 400px;
+}
+
+.contenedorImg a{
+  scroll-behavior: smooth;
+}
+
+.encamisadaimgCard{
+  width: 380px;
+}
+
+.fotoEncamisada{
+  height: 370px;
+  width: 260px;
+  border-radius: 20px;
+}
+
+.fotoEncamisada1{
+  width: 346px;
+}
+
+.fotoCopaczocav1{
+  width: 340px;
+}
+
+.fotoCopaczocav2{
+  height: 246px;
+  width: 303px;
+}
+
+.aboutContainer{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tituloAbout{
+  font-weight: 400;
+}
+
+.subTitulos{
+  margin-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;  
+}
+
+.titulosPrincipales{
+  font-size: 25px;
+}
+
+.cardAbout{
+  width: 500px;
+  background-color: #afafc0;
+  position: relative;
+  left: 700px;
+  border-radius: 15px;
+  animation: bounceInDown;
+  animation-duration: 2s;
+}
+
+.cardTitle{
+  background-color:#4CAF50;
+  border-radius: 20px 20px 0 0;
+  color: white;
+}
+
+.colab{
+  background-color: rgb(55, 36, 224);
+}
+
+
+.derecha{
+  animation: bounceInRight;
+  animation-duration: 2s;
+}
+
+.izquierda{
+  animation: bounceInLeft;
+  animation-duration: 2s;
+}
+
+.kidStyle{
+  color: rgb(0, 140, 255);
+  font-weight: bold;
+}
+
+.manstyle{
+  color: rgb(204, 70, 70);
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* Inicio page */
+.contenedorHome{
+  text-align: center;
+}
+
+.contenedorFondoImg{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.contenedorFondoImg img{
+  opacity: 0.8;
+}
+
+.tituloInicio{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tituloInicio h1{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.tituloLogoUnach{
+  font-weight: bolder;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.logoUnicach {
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.italicLetra{
+  font-style: italic;
+}
+
+.sucesosFuente{
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+/* Fin inicio page */
+
+@media (max-width: 1120px) {
+  .imgsCardsContenedor > img {
+    height: 130px;
+    width: 220px;
+  }
+
+  .boton{
+    width: 300px;
+  }
+
+}
+
+
+
+
+/* celulares */
+@media (max-width: 697px) {
+
+
+
+  .fotoWeyatres{
+    width: 300px;
+  }
+  
+  .boton{
+    width: 200px;
+  }
+  
+  .contenidoCuentos p{
+    font-size: 90%;
+    text-align: justify;
+  }
+
+  .cardsCuentos{
+    margin: 10px auto;
+    padding: 5px
+  }
+
+  .tituloAbout{
+    font-size: 30px;
+    font-weight:lighter;
+    font-weight: bold;
+  }
+  
+  .subTitulos{
+  text-transform: uppercase;  
+  font-size: 15px;
+  }
+
+  .titulosPrincipales{
+    font-size: 20px;
+  }
+  
+  .cardAbout{
+    position: relative;
+    left: 15px;
+    width: 340px;
+    border-radius: 10px;
+  }
+
+  .cardTitle{
+    color: white;
+  }
+  .sucesosFuente{
+    color: green;
+    font-size: 13px;
+  }
+
+  /* Inicio page */
+
+
+  .tituloInicio{
+    text-align: center;
+  }
+
+  .tituloInicio h1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .contenedorFondoImg img{
+    height: 370px;
+    width: 375px;
+    position: relative;
+    right: 2px;
+  }
+
+  .tituloInicio h1{
+    position: relative;
+    right: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .containerFooter{
+    height: 100px;
+    background-color: #333;
+  }
+
+  .containerFooter p{
+    position: relative;
+    top: 30px;
+    color: white;
+  }
+  .cardTitle{
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Fin inicio page */
+
+}
+
+@media (max-width: 370px) {
+
+  .contenedorFondoImg > img{
+    height: 330px;
+    width: 350px;
+  };
+}
