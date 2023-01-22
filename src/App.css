@@ -1,47 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html{
   /* Para tener un movimiento lento */ 
   scroll-behavior: smooth; 
 }
 
-
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.reports,
+.products {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 3rem;
 }
 
 /* De aquí para abajo son mis estilos */
@@ -178,13 +156,14 @@ text-align: center;
 }
 
 .cardTitle{
-  background-color:#4CAF50;
+/*   background-color:#4CAF50; */
+  background-color: #060b26;
   border-radius: 20px 20px 0 0;
   color: white;
 }
 
 .colab{
-  background-color: rgb(55, 36, 224);
+  background-color: #060b26;
 }
 
 
@@ -214,6 +193,16 @@ text-align: center;
 
 
 /* Inicio page */
+
+.cardColor{
+  background-color: #060b26 !important;
+  padding-bottom: 10px;
+}
+
+.test{
+  padding-top: 70px;
+}
+
 .contenedorHome{
   text-align: center;
 }
@@ -261,6 +250,18 @@ text-align: center;
 .sucesosFuente{
   font-style: italic;
   font-weight: 200;
+}
+
+.containerFooter{
+  height: 10vh;
+  background-color: #060b26;
+
+}
+
+.containerFooter p{
+  position: relative;
+  top: 30px;
+  color: white;
 }
 
 
@@ -362,7 +363,7 @@ text-align: center;
 
   .containerFooter{
     height: 100px;
-    background-color: #333;
+    background-color: #060b26;
   }
 
   .containerFooter p{
@@ -373,9 +374,12 @@ text-align: center;
   .cardTitle{
     border-radius: 10px 10px 0 0;
   }
-
+  
   /* Fin inicio page */
 
+  .test2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 370px) {

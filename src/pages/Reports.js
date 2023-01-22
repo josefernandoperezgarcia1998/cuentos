@@ -1,22 +1,21 @@
 import React from 'react';
-import './estilos/NavBar.css';
-import fotoweya from './img/weyaweya.png';
-import fotoweya1 from './img/weyaweya1.png';
-import fotoweya2 from './img/weyaweya2.png';
-import fotoweya3 from './img/weyaweya3.png';
-import fotoweya4 from './img/weyaweya4.png';
-import weyaCard from './img/weyaCard.jpg';
-import audioweya from './multimedia/santo.mp3';
-import encamisadaCard from './img/encamisadaCard.png';
-import encamisada1 from './img/encamisada1.png';
-import copaczoca1 from './img/copaczoca1.png';
-import copaczoca2 from './img/copaczoca2.png';
-import duende1 from './img/duende1.jpg';
+import fotoweya from  '../components/img/weyaweya.png';
+import fotoweya1 from '../components/img/weyaweya1.png';
+import fotoweya2 from '../components/img/weyaweya2.png';
+import fotoweya3 from '../components/img/weyaweya3.png';
+import fotoweya4 from '../components/img/weyaweya4.png';
+import weyaCard from '../components/img/weyaCard.jpg';
+import audioweya from '../components/multimedia/santo.mp3';
+import encamisadaCard from '../components/img/encamisadaCard.png';
+import encamisada1 from '../components/img/encamisada1.png';
+import copaczoca1 from '../components/img/copaczoca1.png';
+import copaczoca2 from '../components/img/copaczoca2.png';
+import duende1 from '../components/img/duende1.jpg';
 
 
 
 
-class CuentosNav extends React.Component{
+class Reports extends React.Component{
 
     state={
       divcontainer:false,
@@ -62,8 +61,8 @@ class CuentosNav extends React.Component{
           
         <div>{/* DIV PADRE DE TODO EL ELEMENTO */}
 
-            <div className="">
-                <div className="w3-container w3-green tituloprincipal">
+            <div className="test ">
+                <div className="w3-container w3-green tituloprincipal cardColor">
                     <h1>¡Los cuentos más espeluznante!</h1>
                     <p>En esta sección encontrarás los cuentos que han nacido en el municipio de Copainala</p>
                 </div>
@@ -408,10 +407,11 @@ class CuentosNav extends React.Component{
                     <br/>   
                     </div>
                     {/* Termina quinto cuento */}
-
-
                 </div>
             </div>
+            <footer className="containerFooter test2">
+                <p>Hecho con ♥️ por JFPG</p>
+            </footer>
         </div>
       );
     }
@@ -441,4 +441,4 @@ class CuentosNav extends React.Component{
     );
 } */
 
-export default CuentosNav;
+export default Reports;

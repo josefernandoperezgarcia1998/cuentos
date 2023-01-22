@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () =>{
+const Products = () =>{
     return (
-        <div className="aboutContainer">
-            <div className="w3-container w3-green">
+        <div className="aboutContainer test ">
+            <div className="w3-container w3-green cardColor">
                 <h1 className="tituloprincipal">Acerca de la Aplicación</h1>
                 <p>En esta sección se encuentra información referente a esta aplicación.</p>
             </div>
@@ -62,8 +62,11 @@ const About = () =>{
                     <h2 className="titulosPrincipales">José Fernando Pérez García</h2> 
                 </div>
             </div>
+            <footer className="containerFooter">
+                <p>Hecho con ♥️ por JFPG</p>
+            </footer>
         </div>
     );
 }
 
-export default About;
+export default Products;
