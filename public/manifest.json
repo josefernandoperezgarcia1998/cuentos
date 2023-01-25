@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Narrativas y Sucesos",
+  "name": "Narrativas & Sucesos.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logocool.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logocool.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "392x392"
     },
     {
-      "src": "logo512.png",
+      "src": "logocool.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "712x712"
     }
   ],
   "start_url": ".",
