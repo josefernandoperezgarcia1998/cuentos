@@ -11,6 +11,8 @@ import encamisada1 from '../components/img/encamisada1.png';
 import copaczoca1 from '../components/img/copaczoca1.png';
 import copaczoca2 from '../components/img/copaczoca2.png';
 import duende1 from '../components/img/duende1.jpg';
+import mala_mujer from '../components/img/la_mala_mujer.png';
+import sombreron from '../components/img/sombreron.jpg';
 
 
 
@@ -26,6 +28,8 @@ class Reports extends React.Component{
       divcontainer6:false,
       divcontainer7:false,
       divcontainer8:false,
+      divcontainer9:false,
+      divcontainer10:false,
     }
   
     render()
@@ -50,12 +54,32 @@ class Reports extends React.Component{
       var Handlechange5 = e => {
         this.setState({divcontainer5:!this.state.divcontainer5});
       }
+      var Handlechange6 = e => {
+        this.setState({divcontainer6:!this.state.divcontainer6});
+      }
+      var Handlechange7 = e => {
+        this.setState({divcontainer7:!this.state.divcontainer7});
+      }
+      var Handlechange8 = e => {
+        this.setState({divcontainer8:!this.state.divcontainer8});
+      }
+      var Handlechange9 = e => {
+        this.setState({divcontainer9:!this.state.divcontainer9});
+      }
+      var Handlechange10 = e => {
+        this.setState({divcontainer10:!this.state.divcontainer10});
+      }
 
       const cuento1=this.state.divcontainer;
       const cuento2=this.state.divcontainer2;
       const cuento3=this.state.divcontainer3;
       const cuento4=this.state.divcontainer4;
       const cuento5=this.state.divcontainer5;
+      const cuento6=this.state.divcontainer6;
+      const cuento7=this.state.divcontainer7;
+      const cuento8=this.state.divcontainer8;
+      const cuento9=this.state.divcontainer9;
+      const cuento10=this.state.divcontainer10;
       
       return(
           
@@ -63,7 +87,7 @@ class Reports extends React.Component{
 
             <div className="test ">
                 <div className="w3-container w3-green tituloprincipal cardColor">
-                    <h1>¡Los cuentos más espeluznante!</h1>
+                    <h1>¡Las narrativas más espeluznante!</h1>
                     <p>En esta sección encontrarás los cuentos que han nacido en el municipio de Copainala</p>
                 </div>
 
@@ -73,9 +97,11 @@ class Reports extends React.Component{
                     <div class="w3-third cardsCuentos derecha espacioCards" id="weyaID">
                         <div className="imgsCardsContenedor">
                         <img className="imgsCards" src={weyaCard} alt="ImagenDelWeyaWeya"/>
+                        <br></br>
+                        <small>© Israel Vázquez</small>
                         </div>
                         <h2 className="tituloCuentoCard">El Weya-Weya</h2>
-                        <p><strong>Categoria:</strong> CUENTOS.</p>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
                         <p className="descripciónCuento">Mujer ya regresé. Pero para ese entonces ya habían pasado varios años desde que se había ido...</p>
                         <div className="contenedorBoton">
                             <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange}>{cuento1?'Ocultar':'Ver'}</button>
@@ -135,22 +161,32 @@ class Reports extends React.Component{
                                     Y de esta misma manera es en la que finaliza la historia, que a su vez es representada en una danza tradicional en el pueblo, finalizando en ella al igual que acá, con la entrega en matrimonio de las hijas del Weya-Weya, el cual celebran todos los personajes de la historia iniciando un baile acompañado con la música de tambor y flauta de carrizo.</p>
                                     <div className="contenedorImg">
                                         <img className="fotoWeya" src={fotoweya} alt="Foto de la familia del Weya-Weya"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>Foto de la familia del Weya-Weya</p>
                                         <br/>
                                         <br/>
                                         <img className="fotoWeya" src={fotoweya1} alt="Foto observa trabajo de cigarro"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>El Weya-Weya observa el trabajo final del elaborado de cigarro de una de sus hijas.</p>
                                         <br/>
                                         <br/>
                                         <img className="fotoWeya fotoWeyatres" src={fotoweya2} alt="Foto concentración"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>El Weya-Weya pone a prueba la concentración y valentía de uno de los novios de sus hijas</p>
                                         <br/>
                                         <br/>
                                         <img className="fotoWeya fotoWeyatres" src={fotoweya3} alt="Foto segundo novio"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>El Weya-Weya poniendo a prueba al segundo novio por medio de fuerza bruta</p>
                                         <br/>
                                         <br/>
                                         <img className="fotoWeya fotoWeyatres" src={fotoweya4} alt="Foto permiso novios"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>El Weya-Weya otorga el permiso a los novios para que se casen con sus hijas, al fondo lado derecha, se observa a los músicos de tambor y flauta de carrizo, quienes empiezan tocar un son , para así festejar a las parejas.</p>
                                         <a href="#weyaID" className="w3-button w3-round-large w3-black boton">Inicio</a>
                                     </div>
@@ -166,9 +202,11 @@ class Reports extends React.Component{
                     <div class="w3-third cardsCuentos izquierda" id="encamisadaID">
                         <div className="imgsCardsContenedor">
                         <img className="imgsCards encamisadaimgCard fotoEncamisada1" src={encamisadaCard} alt="ImagenDeEncamisada"/>
+                        <br></br>
+                        <small>© José Ignacio López López</small>
                         </div>
                         <h2 className="tituloCuentoCard">La Encamisada</h2>
-                        <p><strong>Categoria:</strong> CUENTOS.</p>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
                         <p className="descripciónCuento">Es un baile con historia, con antecedentes históricos, porque la encamisada se llamaba “Matza”, que quiere decir estrella...</p>
                         <div className="contenedorBoton">
                             <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange2}>{cuento2?'Ocultar':'Ver'}</button>
@@ -199,6 +237,8 @@ class Reports extends React.Component{
                                     <p>Finalmente, su desdichada suerte culminaría de peor manera, ya que la gente del lugar empezó a organizarse y a decidir cuál sería su destino, ya que por temor a contagiarse de sus extraños aquejamientos o simplemente por repudio a su figura, decidieron echarla fuera del pueblo no sin antes colocarle un sobrenombre, y fue de esa manera que empezaron a llamarla “la encamisada” haciendo referencia a las grandes camisas que ella portaba intentado cubrir su desgracia.</p>
                                     <div className="contenedorImg">
                                         <img className="fotoEncamisada" src={encamisada1} alt="Traje de la encamisada"/>
+                                        <br></br>
+                                        <small>© Israel Vázquez</small>
                                         <p>La Encamisada”, traje utilizado para ejecutar la danza del mismo nombre</p>
                                         <a href="#encamisadaID" className="w3-button w3-round-large w3-black boton">Inicio</a>
                                     </div>
@@ -214,9 +254,11 @@ class Reports extends React.Component{
                     <div class="w3-third cardsCuentos derecha" id="copaczocaID">
                         <div className="imgsCardsContenedor">
                         <img className="imgsCards encamisadaimgCard fotoCopaczocav1" src={copaczoca1} alt="ImagenDeCopaczoca"/>
+                        <br></br>
+                                        <small>© Chiapas Paralelo</small>
                         </div>
                         <h2 className="tituloCuentoCard">La Copaczoca</h2>
-                        <p><strong>Categoria:</strong> CUENTO.</p>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
                         <p className="descripciónCuento">Se cuenta entre los pobladores de mayor edad, que hace un tiempo existía una mujer en el poblado que se dedicaba...</p>
                         <div className="contenedorBoton">
                             <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange3}>{cuento3?'Ocultar':'Ver'}</button>
@@ -256,9 +298,11 @@ class Reports extends React.Component{
                     <div class="w3-third cardsCuentos izquierda" id="copaczoca2ID">
                         <div className="imgsCardsContenedor">
                         <img className="imgsCards encamisadaimgCard fotoCopaczocav2" src={copaczoca2} alt="ImagenDeCopaczoca2"/>
+                        <br></br>
+                        <small>© Magdalena Morales</small>
                         </div>
                         <h2 className="tituloCuentoCard">La Copaczoca: Sucesos y Apariciones</h2>
-                        <p><strong>Categoria:</strong> SUCESOS.</p>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
                         <p className="descripciónCuento">Mucho tiempo y diferentes sucesos han pasado desde la primera aparición de este personaje en el pueblo. Siendo el año 2016...</p>
                         <div className="contenedorBoton">
                             <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange4}>{cuento4?'Ocultar':'Ver'}</button>
@@ -312,11 +356,13 @@ class Reports extends React.Component{
                     {/* Inicia quinto cuento */}
                     <div class="w3-third cardsCuentos izquierda" id="duendeID">
                         <div className="imgsCardsContenedor">
-                        <img className="imgsCards encamisadaimgCard fotoCopaczocav2" src={duende1} alt="ImagenDeduende1"/>
+                        <img className="imgsCards encamisadaimgCard fotoCopaczocav2" src={mala_mujer} alt="ImagenDeduende1"/>
+                        <br></br>
+                        <small>© EsChiapas</small>
                         </div>
-                        <h2 className="tituloCuentoCard">Sucesos sobre duendes</h2>
-                        <p><strong>Categoria:</strong> SUCESOS.</p>
-                        <p className="descripciónCuento">Cuentan varios sucesos que los duentes...</p>
+                        <h2 className="tituloCuentoCard">Aparecidos</h2>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
+                        <p className="descripciónCuento">Dentro del municipio y comunidades aledañas, se conocen historias sobre las apariciones de este ser...</p>
                         <div className="contenedorBoton">
                             <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange5}>{cuento5?'Ocultar':'Ver'}</button>
                         </div>
@@ -325,78 +371,18 @@ class Reports extends React.Component{
                                 /* Contenedor padrePadre */
                                 <div className="contenidoCuentos">
                                     {/* ContenedorHijos */}
-                                    <h2 className="tituloCuentos">Historia sobre duendes</h2>
+                                    <h2 className="tituloCuentos">Historia sobre la mala mujer</h2>
                                     <div className='audios'>
                                         <audio src={audioweya} controls></audio>
                                     </div>
-                                    <strong>Suceso 1</strong>
                                     <p>A inicios de los años 90, mi hermano Julio y yo realizábamos recorridos a pie o en bicicleta en el tramo carretero de Copainalá a la Ribera Tierra Blanca. Estábamos más jóvenes y nos gustaba hacer deporte, sobre todo para mantener una buena condición cardiovascular, el camino nos ayudaba mucho, en ese entonces ya se encontraba pavimentado, tenía subidas, bajadas, y muy poca gente manejaba, así que era perfecta para nuestra rutina completa. Además de esto, contábamos con familiares que vivían a línea carretera, y cuando regresábamos a Copainalá, casi siempre pasábamos a refrescarnos en casa de alguno de ellos.</p>
-                                    <p>Así transcurrió un buen tiempo, mi hermano y yo éramos constantes en el ejercicio y siempre por las tardes, digamos alrededor de las 5 pm subíamos a nuestro recorrido. Casi siempre de regreso al pueblo entrabamos con los últimos rayos del sol, la hora exacta en que la hilera de las montañas que rodean al pueblo proyectan una gran sombra sobre todas las casas de Copainalá, y solo las montañas rumbo a Coapilla quedan iluminadas con los últimos rayos.</p>
-                                    <p>Resultó entonces, sin saber que sería la última caminata que realizaríamos por ese tramo carretero, en una buena tarde calurosa y con muy pocas nubes en el cielo, nos disponíamos a salir con mi hermano Julio. Como era de esperarse, el tramo de ida resulto normal como en días anteriores, llegamos a tierra blanca, nos detuvimos en casa de un familiar para tomar agua y de nuevo nos pusimos en marcha para el regreso. </p>
-                                    <p>Quizá era un poco más tarde en esa ocasión, y apenas íbamos pasando “el jobo”, si, ese lugar donde ahora se encuentra un centro de reinserción social, claro, en aquellos años no había nada, apenas y estaba la carretera, lo demás era monte y tierra. Total, estábamos pasando por aquel lugar, mi hermano iba montado en bicicleta y yo iba trotando; de pronto le dije a mi hermano:</p> 
-                                    <strong><span className="italicLetra">–Oye Julio, y esos niños que hacen ahí en ese montón de tierra jugando canicas, ¿Hijos de quienes serán?, si nadie vive a por acá cerca.</span></strong>
-                                    <p>Y me dice mi hermano: </p>
-                                    <strong><span className="italicLetra">-Ha de ser que son de las tres o cuatro casitas que apenas hay acá.</span></strong>
-                                    <p>Le contesté:</p>
-                                    <strong><span className="italicLetra">-No creo, están muy lejos y está ya muy oscuro como para que anden solitos.</span></strong>
-                                    <p>En fin, Julio y yo continuamos con nuestro camino sin prestar demasiada atención a aquellos 4 infantes. Pero al llegar a la curva donde se encuentra el basurero, que son aproximadamente como 3 km después del jobo, nuevamente nos volvemos a topar con los mismos niños, fue entonces que ya toda la situación se me empezó a tornar muy fuera de lo común, y por mi mente pasaba; ¿cómo es posible que unos niñitos nos hayan ganado el paso, tanto como para volver a encontrarlos jugando plenamente en el polvo?</p>
-                                    <p>La verdad era que, no sabíamos que pensar ante tales imágenes, pero la sensación de la intriga y el miedo se estaba haciendo presente, por lo que decidimos apartar la vista de ellos, y pasar lo más rápido posible por ese lugar. Fue así nuestra sorpresa, que, al estar entrando al pueblo, ahí en ese lugar donde ahora se encuentra la sub-estación de la CFE, ahí cerca del lienzo charro, justo cuando estábamos pasando es que nuevamente nos topamos a los 4 niños. Esta vez ya no lo podía creer, ¿cómo lo lograban?, ¿acaso tenían un atajo?</p>
-                                    <p>Fue ahí que me arme de valor y me les acerque un poco, y les dije:</p>
-                                    <strong><span className="italicLetra">-Hey niños…</span></strong>
-                                    <br/>
-                                    <strong><span className="italicLetra">¿Por dónde bajan?, ¿Cómo le hacen para ganarnos el paso?</span></strong>
-                                    <p>Nunca me contestaron…</p>
-                                    <p>Entonces mi hermano les empezó a hablar en un tono más agresivo: </p>
-                                    <strong><span className="italicLetra">-¡¡Hey chamaquitos!!, Entonces, ¿Cómo le hacen para ganarnos?, Hablen pues.</span></strong>
-                                    <p>En ese instante, yo, que era el que estaba más cerca de esos chamaquitos, vi como uno de ellos volteó la vista hacia mí, y ahí fue donde pude ver como sus ojos eran rojos, muy rojos como llenos de sangre, entonces abrió la boca y me mostraba los dientes picudos, así como cuando un animal te quisiera morder. Fue a partir de ese momento que decidimos no perder más tiempo y emprender la huida con mi hermano, fue tanta la impresión y la adrenalina que en un santiamén logramos llegar en el mero centro del pueblo, ni siquiera sentimos la fatiga, sino hasta mucho después, cuando las palpitaciones de nuestro corazón se habían calmado. No perdimos tiempo y nos fuimos directamente hasta nuestra casa, y allá después de contarles todo a nuestros familiares, sin duda alguna nos dijeron que nos habíamos topado con duendes, que son como personitas de baja estatura, y que de lejos los puedes confundir con chamaquitos, sobre todo porque les gusta hacer travesuras y andar espantando a la gente que pasa sola por lugares solitarios. Así nos sucedió, y sin querer esa fue la última vez que nos aventuramos tan tarde con Julio a subir por esa carretera.</p>
-                                    <span className="sucesosFuente">Suceso relatado por el Profesor Mario Armando Núñez Aragón, entrevista personal, Marzo del 2018, Copainalá Chiapas.</span>
-                                    <p>--------------------------------------------------------------------------</p>
-                                    <strong>Suceso 2</strong>
-                                    <p>En una ocasión mi mamá nos relató algo muy extraño que sucedía en el plantel “Jardín de niños Melchor Ocampo”, lugar donde ella laboraba como uno de los elementos encargados de la limpieza y orden del lugar. Le sucedía que, al ser la última en retirarse, ella pasaba por los salones y lugares donde había muebles para acomodarlos, de tal manera que al otro día se encontrara todo ordenado. Le ocurría que, a pesar de su esfuerzo diario en ordenar aquellos muebles, todos los días por las mañanas, cuando nuevamente ella era la primera persona en llegar al jardín de niños, para su sorpresa, encontraba a todos los muebles fuera lugar, tal y como si el jardín hubiera laborado por las noches. </p>
-                                    <p>Era muy intrigante toda aquella situación, ya que el jardín de niños estaba rodeado por altas bardas, no había velador, pero era imposible que alguien más entrara, ya que las paredes que rodeaban el jardín era muy altas para escalarlas o tratar de saltarlas, además de que mi madre era la única con las llaves de la entrada.</p>
-                                    <p>Resultó en un día de labores, mi madre nos contó, que una maestra tenía 19 niños a su cargo dentro de un salón. Tal día era también momento de actividades deportivas, por lo que la encargada de aquella materia se presentó ante la clase. </p>
-                                    <p>Así que los niños y la maestra de educación física, se dirigieron al área de deportes, una vez ahí, la maestra formo cinco equipos de cuatro infantes, fue así que, dentro del transcurso de la clase, los niños desempeñaron actividades en equipo. Una vez terminada la clase deportiva, los niños se dirigieron al salón, pero al realizar el pase de lista, la maestra de deportes se sorprendió al solo contar diecinueve de ellos. </p>
-                                    <strong><span className="italicLetra">- ¿Cómo es posible? - </span></strong><span>decía.</span>
-                                    <p>Así que rápidamente empezó a buscar al infante extraviado, al no encontrarlo, pidió ayuda a la maestra tutora, pero ella ante tal comentario, le explicaba que no había de que preocuparse, ya que eran exactamente diecinueve niños los que originalmente tenía a cargo.</p>
-                                    <strong><span className="italicLetra">-No es posible, si yo claramente conté los cinco equipos de cuatro niños. Yo misma desde la distancia estuve siempre atenta con ellos y claramente siempre fueron veinte-. Nuevamente afirmaba la maestra de deportes.</span></strong><span></span>
+                                    <p>Dentro del municipio y comunidades aledañas, se conocen historias sobre las apariciones de este ser, todas coinciden que sus intenciones no son de las más buenas, y dentro de ellas se destacan ciertas características muy interesantes, como, por ejemplo, el que se diga que este personaje solo se muestra ante personas de sexo masculino. </p>
+                                    <p>Hace muchos años atrás, era muy recurrente escuchar que las personas del pueblo mencionaran en forma de advertencia a todos aquellos varones, sobre todo a los que por alguna u otra circunstancia vagaran por la noche solos, el tratar de evitar eso exactamente, ya que no fuera por su desdicha el encontrase con este ente. </p>
+                                    <p>La figura que se describe de este ser, es el de una mujer muy hermosa, con los cabellos largos que en ocasiones le cubren el rostro. Cuando se topa con un hombre, la mala mujer, trata de seducirlo para que posteriormente la siga, con la promesa generalmente de tener un encuentro sexual. </p>
+                                    <p>Aquellos varones que han logrado escapar de esta aparición, han contado haber visto que este ser no utiliza los pies para desplazarse, si no que flota, al igual que este par de miembros de su cuerpo los tiene al revés. Los que se han aventurado a seguirla hasta el final, han terminado enredados entre matorrales llenos de espinas, pero lo más fantástico por no mencionar terrorífico es que algunos cuentan que llegando al final del recorrido con la mala mujer, este ser se transforma en una enorme serpiente que intenta devorarlos. </p>
                                     <br/>
                                     <br/>
-                                    <strong><span className="italicLetra">-Quizá se metió algún niño de otro salón- le mencionaba la tutora.</span></strong>
-                                    <br/>
-                                    <br/>
-                                    <strong><span className="italicLetra">-No es posible, a esa hora no había ningún niño afuera de otros salones, yo misma verifiqué - </span></strong>
-                                    <p>Argumentaba la otra maestra...</p>
-                                    <p>No contenta ante su intriga, los niños y las maestras fueron al área de deportes donde anteriormente habían estado, y dieron a la búsqueda del infante numero veinte. Resultó ser que, al par de minutos de estar buscando, un niño de manera muy apresurada se le acercó a ambas maestras, y casi sin aliento les decía a ver visto a un niño muy chaparrito, salir corriendo de la nada y después trepar a un árbol que se encontraba cerca de la barda, e inmediatamente haberse parado en una de las ramas y posteriormente arrojarse detrás del muro. Ante tal escenario descrito, las maestras se apresuraron a ver lo que sucedía, quizá pensando encontrarse a algún niño lastimado por el suelo, por intentar subirse al árbol. Pero al llegar al lugar, solo encontraron un montón de hojas cayendo de aquella planta, junto a varias ramas que por alguna razón no dejaban de moverse. Extraña era la situación, ya que ese día no había nada de viento.</p>
-                                    <p>Mi madre y las maestras compartieron sus experiencias mutuamente, y a la par con demás gente que tenía viviendas cerca del jardín de niños. </p>
-                                    <p>Fue así que, a partir de la divulgación de estos sucesos, muchos empezaron a mencionar que sin duda eran duendes los que desacomodaban los muebles del lugar, y que en ocasiones trepaban del rio a la barda de la escuela, para jugar y hacer travesuras con los demás niños.</p>
-                                    <span className="sucesosFuente">Suceso relatado por el Profesor Mario Armando Núñez Aragón, entrevista personal, marzo del 2018, Copainalá Chiapas.</span>
-                                    <p>--------------------------------------------------------------------------</p>
-                                    <strong>Suceso 3</strong>
-                                    <p>Esto que me sucedió, no tiene mucho tiempo...</p>
-                                    <p>Hace ya varios años que me casé y por lo consiguiente ya no vivo en casa de mi madre. Pero en esa ocasión mi esposa e hijos habían salido del pueblo y me había quedado solito, pero dije.</p>
-                                    <strong><span className="italicLetra">-Mejor me voy a visitar a mi mamá y de paso allá me quedo a dormir, para no estar solito</span></strong>
-                                    <br/>
-                                    <p>De esta manera me dirigí para aquel lugar, y grata fue mi sorpresa al encontrar a mi hermano Julio y a uno de los hijos mi hermana también ahí. Así que, lo que restaba de las horas del día, platicamos, y nos pusimos al día etc.</p>
-                                    <p>Ya entrada la noche, mi mamá y mi sobrino se quedaron viendo la tele, mientras mi hermano julio y yo nos retiramos a dormir a nuestros antiguos cuartos. Todo transcurría normal, mi sueño era tranquilo, cuando de repente:</p>
-                                    <strong><span className="italicLetra">-Brum, brum, brom brrrr-</span></strong>
-                                    <p>Empecé a percibir un sonido que provenía sobre el techo de mi cuarto, así como cuando alguien empuja una piedra muy pesada por el suelo, bueno, así trato de describirlo. Sucedió que los sonidos no cesaron, al contrario, ya escuchaba otros. Ahora sonaba tal y como si alguien estuviera arrastrando costales de piedra, luego se escuchaban pasos muy rápidos, incluso que bajaban y subían de manera muy aprisa por la escalera que da al techo.</p>
-                                    <strong><span className="italicLetra">-Ese mi sobrino Mauricio, que tanto es que hace a estas horas, ya casi son la una de la mañana, no me deja dormir.</span></strong>
-                                    <p>Entre dientes me lo decía a mí mismo...</p>
-                                    <p>Total, empezó a pasar el tiempo, mi estado entre la vigilia y el sueño causada por los sonidos que por momentos se pausaban y luego volvían a empezar, me resultaba cada vez más molesto. Así que tome la decisión de salir del cuarto y dirigirme hacia la recamara de Mauricio, y ahí en el trayecto me decía a mí mismo:</p>
-                                    <strong><span className="italicLetra">-Pobre mi sobrino, quizá tiene algún proyecto de su escuela y está utilizando algunos materiales pesados, y yo le voy a regañar.</span></strong>
-                                    <p>Extraño me resultó, porque observé, y mi sobrino se encontraba durmiendo, así que no podría ser el causante, de aquellos ruidos. Pero dije, - tal vez sea su perro-y tampoco, el animal conciliaba el sueño felizmente que ni de mi presencia se logró percatar.</p>
-                                    <p>Al no encontrar ninguna señal a la causa de mi desvelo, decidí volver a mi cuarto, quizá y ahora todo transcurriría de manera normal. Pero para mi sorpresa, apenas y empezaba a conciliar el sueño, y los ruidos iniciaron nuevamente. Pasaba por mi mente:</p>
-                                    <strong><span className="italicLetra">-Seguramente son bandidos que nos quieren asaltar, pero, ¿cómo le habrán hecho para subir al techo?, no hay ni como trepar, ni arboles ni nada, solo con paracaídas se puede aterrizar.</span></strong>
-                                    <p>La verdad es que mi desesperación ya había llegado a un límite, y con mucho coraje tomé un machete, a lo que salí decidido a enfrentarme con lo que estuviera ahí, subí los escalones maldiciendo y golpeando el machete contra la pared, para ver si de una vez por todas se ahuyentaba lo que sea que estuviera allí. Estaba a punto de llegar a los últimos escalones, cuando volví a escuchar los ruidos, fue ahí cuando un aire helado se me metió en el cuerpo, me quedé paralizado por un momento y dudaba si en verdad quería avanzar, a lo que me dije:</p>
-                                    <strong><span className="italicLetra">–Si me quedo así, ya estuvo que me llevó- y con más coraje empuñe el machete llegando al techo lanzando golpes con él. Pero no vi nada, absolutamente nada. Lo único que logré fue despertar a todos en la casa, y muy sorprendidos me preguntaban qué era lo que estaba haciendo, a lo que les comencé a comentar todo lo que estaba escuchando y que no me dejaban dormir con tanto ruidero, - ¿ruidero?, ¿Cuál ruidero?.</span></strong>
-                                    <p>Me decían...</p>
-                                    <strong><span className="italicLetra">-Ese que se escuchaba en el techo, como si estuvieran trabajando los albañiles- les dije.</span></strong>
-                                    <strong><span className="italicLetra">-No escuchamos nada- me decía mi hermano julio.</span></strong>
-                                    <p>Entonces al ver que no llegaríamos a nada, decidí calmarme y mejor cambiarme de cuarto. Así al siguiente día, con más calma le conté a julio a detalle todo lo que me había pasado. Y me comentaba que, en ocasiones, cuando le tocaba dormir en mi antiguo cuarto había escuchado ruidos similares, pero nunca les hacía caso, lo único a lo que se limitaba, era a cambiarse de lugar para dormir, porque me decía:</p>
-                                    <strong><span className="italicLetra">-Para que agarro coraje, si son los duendes los que lo hacen.</span></strong>
-                                    <br/>
-                                    <br/>
-                                    <span className="sucesosFuente">Suceso relatado por el Profesor Mario Armando Núñez Aragón, entrevista personal, marzo del 2018, Copainalá Chiapas.</span>
+                                    {/* <span className="sucesosFuente">Suceso relatado por el Profesor Mario Armando Núñez Aragón, entrevista personal, marzo del 2018, Copainalá Chiapas.</span> */}
                                     <div className="contenedorImg">
                                         <a href="#duendeID" className="w3-button w3-round-large w3-black boton">Inicio</a>
                                     </div>
@@ -407,6 +393,47 @@ class Reports extends React.Component{
                     <br/>   
                     </div>
                     {/* Termina quinto cuento */}
+
+                    {/* Inicia sexto cuento */}
+                    <div class="w3-third cardsCuentos izquierda" id="sombreronID">
+                        <div className="imgsCardsContenedor">
+                        <img className="imgsCards encamisadaimgCard fotoCopaczocav2" src={sombreron} alt="ImagenDeduende1"/>
+                        <br></br>
+                        <small>© Joaquín Miguel Gutierrez</small>
+                        </div>
+                        <h2 className="tituloCuentoCard">El sombreron</h2>
+                        <p><strong>Categoria:</strong> NARRATIVA.</p>
+                        <p className="descripciónCuento">En el municipio, mucha gente dice tener alguna historia (suceso), que podría ser tanto personal...</p>
+                        <div className="contenedorBoton">
+                            <button className="w3-button w3-round-large w3-black boton" onClick={Handlechange6}>{cuento6?'Ocultar':'Ver'}</button>
+                        </div>
+                        {
+                            cuento6 &&( 
+                                /* Contenedor padrePadre */
+                                <div className="contenidoCuentos">
+                                    {/* ContenedorHijos */}
+                                    <h2 className="tituloCuentos">Historia sobre el sombrerón</h2>
+                                    <div className='audios'>
+                                        <audio src={audioweya} controls></audio>
+                                    </div>
+                                    <p>En el municipio, mucha gente dice tener alguna historia (suceso), que podría ser tanto personal o de tercera persona acerca de un encuentro con este ente. 
+                                    Se dice, que el Sombrerón normalmente se le presenta a la gente que desea tener mucho dinero o bien que lo necesita urgentemente. La gente dice que es una figura masculina, a veces se aparece a pie o a caballo, pero siempre se distingue por traer ese gran sombrero que le ha dado su nombre. 
+                                    </p>
+                                    <p>Aquellos a quienes se les ha manifestado, han contado haber estado solos, ya sea caminando por lugares solitarios o bien en el monte. El Sombrerón es atraído por personas avaras o con urgencia de dinero. Al aparecer en escena, este ser empieza a formar una plática muy amena con la persona, pareciendo al principio tener muy buenas intenciones y que sin ninguna complicación les brindaría su ayuda. </p>
+                                    <p>Se dice que, quienes acceden a un trato y posteriormente quedan en un acuerdo con esta aparición, son engañados, ya que a pesar de todo el dinero y abundancia que ciertamente tendrán, nunca podrán gastarlo, ya que, un vacío en su persona además de incrementar su codicia, al final de todos los días se los impedirá. Agregado a este problema oculto, el Sombrerón lanza antes de sellar el trato una advertencia a sus víctimas, la cual dice, que al final de sus días de vida, el alma de la persona pasara por la eternidad como sirviente a este ser. Hay quienes dicen que las almas esclavas son transformadas en bestias de carga, donde el Sombrerón transporta todo el oro buscado a su siguiente victima</p>
+                                    <br/>
+                                    <br/>
+                                    {/* <span className="sucesosFuente">Suceso relatado por el Profesor Mario Armando Núñez Aragón, entrevista personal, marzo del 2018, Copainalá Chiapas.</span> */}
+                                    <div className="contenedorImg">
+                                        <a href="#sombreronID" className="w3-button w3-round-large w3-black boton">Inicio</a>
+                                    </div>
+                                </div>
+                            )
+                        }  
+                    <br/>
+                    <br/>   
+                    </div>
+                    {/* Termina sexto cuento */}
                 </div>
             </div>
             <footer className="containerFooter test2">

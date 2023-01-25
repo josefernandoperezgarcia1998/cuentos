@@ -13,13 +13,15 @@ const Home = () =>{
             
             <div className="w3-container w3-green test cardColor">
                 <h1 className="tituloprincipal">Inicio</h1>
-                <p>Historias y Relatos de Rersonajes Tradicionales de Copainala</p>
+                <p>Historias y Relatos de Rersonajes Tradicionales de Copainalá</p>
             </div>
             <div className="contenedorFondoImg">
                 <img src={copa} alt=""/>
 {/*                 <div className="tituloInicio">
                     <h1>Historias y Relatos de Rersonajes Tradicionales de Copainala</h1>
                 </div> */}
+                <br></br>
+                <small>© El Heraldo Chiapas (2020) </small>
             </div>
             <div className="w3-container w3-green test cardColor">
                 <h1 className="tituloprincipal">Alma Máter</h1>

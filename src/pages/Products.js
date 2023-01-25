@@ -13,7 +13,7 @@ const Products = () =>{
                     <h4 className="subTitulos">Nombre de la Tesis</h4>
                 </div>
                 <div className="cardDesc">
-                <h2 className="titulosPrincipales">Historias y Relatos de Personajes Tradicionales de Copainala</h2>
+                <h2 className="titulosPrincipales">TRADICIÓN ORAL DE COPAINALÁ: MITOS, LEYENDAS Y RELATOS VARIOS; UNA PROPUESTA PARA SU CONSERVACIÓN MEDIANTE UNA APLICACIÓN PARA DISPOSITIVOS MÓVILES</h2>
                 </div>
             </div>
 
