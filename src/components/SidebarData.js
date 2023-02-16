@@ -11,13 +11,13 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Narrativas',
+    title: 'Leyendas y Mitos',
     path: '/reports',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
-    title: 'Sucesos',
+    title: 'Relativos Varios',
     path: '/sucesos',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'

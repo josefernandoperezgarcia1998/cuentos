@@ -98,7 +98,7 @@ class Reports extends React.Component{
                         <div className="imgsCardsContenedor">
                         <img className="imgsCards" src={weyaCard} alt="ImagenDelWeyaWeya"/>
                         <br></br>
-                        <small>© Israel Vázquez</small>
+                        <small>© Todo Chiapas</small>
                         </div>
                         <h2 className="tituloCuentoCard">El Weya-Weya</h2>
                         <p><strong>Categoria:</strong> NARRATIVA.</p>
